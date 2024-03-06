@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/62.0.0/Example Scenes/TransformerExamples.unity
+    guid: 7475942f60c376744ba1ec487d140105
+  - enabled: 0
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/62.0.0/Example Scenes/HandGrabUseExamples.unity
+    guid: 509f8fa80c708b343a603a4771d35c85
+  - enabled: 1
+    path: Assets/Scenes/VRLab.unity
+    guid: 7b7ca09744a8e9d489349c3aa37a4c16
+  - enabled: 0
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/62.0.0/Feature Scenes/PokeButton.unity
+    guid: 32b32b71d73d2d649bf917f969f663a1
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6733c834137a1674189671b63c42cb12, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2f0dacaf37d6b774988a1d9dd601da66, type: 2}
