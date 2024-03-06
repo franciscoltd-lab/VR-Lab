@@ -7,6 +7,10 @@ TagManager:
   - SamplesInfoPanel
   - liquid
   - hand
+  - Analitos/1
+  - Analitos/2
+  - Analitos/3
+  - Analitos/4
   layers:
   - Default
   - TransparentFX

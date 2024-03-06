@@ -15,11 +15,18 @@ public class setAnalito : MonoBehaviour
     public Canvas infoCardTitulante;
     private TextMeshProUGUI[] infoTextAnalito;
     private TextMeshProUGUI[] infoTextTitulante;
+    private Toggle change;
 
-    private string url = "http://192.168.1.72:5000/analitos/1";
+    private string url = "http://192.168.1.72:5000/analitos/";
 
-    public async void getAnalito(Toggle change)
+    public async void getAnalito()
     {
+        //int id = int.Parse(this.GetComponent<GameObject>().tag);
+        change = GetComponent<Toggle>();
+        string[] tag = change.tag.Split("/");
+
+        int id = int.Parse(tag[1]);
+
         if (change.isOn)
         {
 
@@ -28,7 +35,7 @@ public class setAnalito : MonoBehaviour
                 try
                 {
                     // Realiza una solicitud GET al endpoint
-                    HttpResponseMessage response = await client.GetAsync(url);
+                    HttpResponseMessage response = await client.GetAsync(url+id);
 
                     // Verifica si la solicitud fue exitosa (c�digo de estado 200)
                     if (response.IsSuccessStatusCode)

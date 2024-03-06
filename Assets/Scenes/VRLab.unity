@@ -1005,6 +1005,25 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 1422490603}
   _maxGrabPoints: -1
+--- !u!1 &182999671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7114770128807387642, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+  m_PrefabInstance: {fileID: 215677277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &182999677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182999671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e3d270b4a88fd49988ff39eb4ff3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoCardAnalito: {fileID: 1492092482}
+  infoCardTitulante: {fileID: 2111651857}
 --- !u!1001 &211651543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1192,6 +1211,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1846037893}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: getAnalito
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: setAnalito, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495691, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495692, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_Name
+      value: Toggle - Hidroxido de Potasio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128640495692, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_TagString
+      value: Analitos/2
+      objectReference: {fileID: 0}
     - target: {fileID: 7114770128640495695, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1230,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114770128710121813, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_text
-      value: "\xC1cido Fosf\xF3rico"
+      value: "Hidr\xF3xido de C\xE1lcio"
       objectReference: {fileID: 0}
     - target: {fileID: 7114770128710121813, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1252,6 +1307,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 182999677}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: getAnalito
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: setAnalito, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387633, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7114770128807387637, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1271,6 +1354,14 @@ PrefabInstance:
     - target: {fileID: 7114770128807387637, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387642, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_Name
+      value: Toggle - Acido Acetico
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128807387642, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_TagString
+      value: Analitos/3
       objectReference: {fileID: 0}
     - target: {fileID: 7114770128891524320, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1320,6 +1411,34 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1935398577}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: getAnalito
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: setAnalito, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367105, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7114770128958367109, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1339,6 +1458,14 @@ PrefabInstance:
     - target: {fileID: 7114770128958367109, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367114, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_Name
+      value: Toggle - Hidroxido de Calcio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770128958367114, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_TagString
+      value: Analitos/4
       objectReference: {fileID: 0}
     - target: {fileID: 7114770128980004577, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1410,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114770129263616271, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_text
-      value: "\xC1cido Sulf\xFArico\n"
+      value: "\xC1cido Ac\xE9tico\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7114770129263616271, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1710,7 +1837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130226374505, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130226374505, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1731,10 +1858,10 @@ PrefabInstance:
     - target: {fileID: 7114770130226374505, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 752077511}
+      objectReference: {fileID: 0}
     - target: {fileID: 7114770130226374505, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.UI.Toggle, UnityEngine.UI
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130226374509, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1755,6 +1882,14 @@ PrefabInstance:
     - target: {fileID: 7114770130226374509, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770130226374514, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_Name
+      value: Toggle - Acido Clorhidrico
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770130226374514, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      propertyPath: m_TagString
+      value: Analitos/1
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130260611507, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1882,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130504384575, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_text
-      value: "\xC1cido Perclorico"
+      value: "Hidr\xF3xido de potasio"
       objectReference: {fileID: 0}
     - target: {fileID: 7114770130504384575, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1975,6 +2110,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7114770130226374514, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 752077506}
+    - targetCorrespondingSourceObject: {fileID: 7114770128640495692, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1846037893}
+    - targetCorrespondingSourceObject: {fileID: 7114770128807387642, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182999677}
+    - targetCorrespondingSourceObject: {fileID: 7114770128958367114, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1935398577}
   m_SourcePrefab: {fileID: 100100000, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
 --- !u!1001 &235984320
 PrefabInstance:
@@ -4247,18 +4391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoCardAnalito: {fileID: 1492092482}
   infoCardTitulante: {fileID: 2111651857}
-  toggle: {fileID: 0}
---- !u!114 &752077511 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7114770130226374505, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
-  m_PrefabInstance: {fileID: 215677277}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752077501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &806825726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6364,6 +6496,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0048489263, y: 0.0048775882, z: 0.099590585}
   m_Center: {x: -0.000000020675044, y: 0.000029137129, z: 0.025461905}
+--- !u!1 &1846037887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7114770128640495692, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+  m_PrefabInstance: {fileID: 215677277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1846037893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846037887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e3d270b4a88fd49988ff39eb4ff3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoCardAnalito: {fileID: 1492092482}
+  infoCardTitulante: {fileID: 2111651857}
 --- !u!1001 &1846632976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6946,6 +7097,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c9763a3e94c9da42bafc35c7c054cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1935398571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7114770128958367114, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+  m_PrefabInstance: {fileID: 215677277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1935398577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935398571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e3d270b4a88fd49988ff39eb4ff3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoCardAnalito: {fileID: 1492092482}
+  infoCardTitulante: {fileID: 2111651857}
 --- !u!1001 &1967684661
 PrefabInstance:
   m_ObjectHideFlags: 0
