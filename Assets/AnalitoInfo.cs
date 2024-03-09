@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,8 @@ namespace Assets
         public string nombre_titulante { get; set; }
         public int volumen_analito { get; set; }
         public int volumen_titulante { get; set; }
+        public string color_inicial { get; set; }
+        public string color_bueno { get; set; }
+        public string color_final { get; set; }
     }
 }

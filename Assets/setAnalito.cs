@@ -17,8 +17,18 @@ public class setAnalito : MonoBehaviour
     private TextMeshProUGUI[] infoTextTitulante;
     private Toggle change;
 
-    private string url = "http://192.168.1.72:5000/analitos/";
+    public Liquid liquidoMatraz;
+    private Renderer renderer;
+    private Material material;
 
+    private string url = "http://192.168.1.72:5000/analito/";
+
+
+    private void Start()
+    {
+        renderer = liquidoMatraz.GetComponent<Renderer>();
+        material = renderer.material;
+    }
     public async void getAnalito()
     {
         //int id = int.Parse(this.GetComponent<GameObject>().tag);
@@ -54,6 +64,18 @@ public class setAnalito : MonoBehaviour
                         infoTextTitulante[1].text = analitoInfo.nombre_titulante;
                         infoTextTitulante[2].text = "Concentraci�n Real: " + analitoInfo.concentracion_titulante + " N";
                         infoTextTitulante[3].text = "Estructura: " + analitoInfo.estructura_titulante;
+
+                        //DEFINIR EL COLOR INICIAL DEL ANALITO
+                        Color tintColor = material.GetColor("_Tint");
+                        Color topColor = material.GetColor("_TopColor");
+
+                        Color colorInicial;
+
+                        ColorUtility.TryParseHtmlString(analitoInfo.color_inicial, out colorInicial);
+
+                        material.SetColor("_Tint", colorInicial);
+                        material.SetColor("_TopColor", colorInicial);
+
 
                     }
                     else
