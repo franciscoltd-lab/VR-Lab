@@ -8,6 +8,7 @@ public class Liquid : MonoBehaviour
     public enum UpdateMode { Normal, UnscaledTime }
     public UpdateMode updateMode;
 
+    public float step;
     [SerializeField]
     float MaxWobble = 0.03f;
     [SerializeField]
@@ -39,6 +40,10 @@ public class Liquid : MonoBehaviour
     Vector3 comp;
     [SerializeField]
     float eulerAngX;
+
+    public string colorInicial;
+    public string colorBueno;
+    public string colorFinal;
 
     // Use this for initialization
     void Start()
