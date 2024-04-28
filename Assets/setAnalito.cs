@@ -23,7 +23,7 @@ public class setAnalito : MonoBehaviour
     private Renderer renderer;
     private Material material;
 
-    private string url = "http://192.168.1.72:5000/analito/";
+    private string url = "http://192.168.162.200:5000/analito/";
 
 
     private void Start()
@@ -64,7 +64,7 @@ public class setAnalito : MonoBehaviour
                         //Llenar la informaci�n con el analito seleccionado
                         infoTextTitulante = infoCardTitulante.GetComponentsInChildren<TextMeshProUGUI>();
                         infoTextTitulante[1].text = analitoInfo.nombre_titulante;
-                        infoTextTitulante[2].text = "Concentraci�n Real: " + analitoInfo.concentracion_titulante + " N";
+                        infoTextTitulante[2].text = "Concentraci�n Real: " + analitoInfo.concentracion_titulante.ToString() + " N";
                         infoTextTitulante[3].text = "Estructura: " + analitoInfo.estructura_titulante;
 
                         //LLenar la información del indicador utilizado
