@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/Meta XR Interaction SDK OVR Samples/62.0.0/Feature Scenes/PokeButton.unity
     guid: 32b32b71d73d2d649bf917f969f663a1
+  - enabled: 0
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/62.0.0/Example Scenes/PoseExamples.unity
+    guid: 4fe358b21fe17764db89a9ab9f202327
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6733c834137a1674189671b63c42cb12, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2f0dacaf37d6b774988a1d9dd601da66, type: 2}
