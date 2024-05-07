@@ -1288,6 +1288,9 @@ MonoBehaviour:
   infoCardAnalito: {fileID: 1492092482}
   infoCardTitulante: {fileID: 2111651857}
   infoCardIndicador: {fileID: 1113837231}
+  mililitrosUsados: {fileID: 1528968425}
+  ecuacion: {fileID: 2018800110}
+  resultado: {fileID: 1698874108}
   liquidoMatraz: {fileID: 1074680123}
 --- !u!1001 &211651543
 PrefabInstance:
@@ -4691,7 +4694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4637090283671048175, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_text
-      value: Instrumentos de Laboratorio
+      value: "Informaci\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 4940169939016864637, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4703,15 +4706,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940169939016864637, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1832
+      value: 0.023
       objectReference: {fileID: 0}
     - target: {fileID: 4940169939016864637, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.1611
+      value: 0.221
       objectReference: {fileID: 0}
     - target: {fileID: 4940169939016864637, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.2216
+      value: 0.222
       objectReference: {fileID: 0}
     - target: {fileID: 5036699395926204300, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: _height
@@ -4759,7 +4762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8560839017174208340, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_text
-      value: Acerca la mano y "agarra" alguno de los materiales.
+      value: Respuesta
       objectReference: {fileID: 0}
     - target: {fileID: 9197458447345037975, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
       propertyPath: m_text
@@ -5297,6 +5300,9 @@ MonoBehaviour:
   infoCardAnalito: {fileID: 1492092482}
   infoCardTitulante: {fileID: 2111651857}
   infoCardIndicador: {fileID: 1113837231}
+  mililitrosUsados: {fileID: 1528968425}
+  ecuacion: {fileID: 2018800110}
+  resultado: {fileID: 1698874108}
   liquidoMatraz: {fileID: 1074680123}
 --- !u!1001 &806825726
 PrefabInstance:
@@ -6639,6 +6645,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2027498034}
+  chat: {fileID: 2145763382}
+  goSourceAudio: {fileID: 0}
 --- !u!1 &1258434740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8787,6 +8795,9 @@ MonoBehaviour:
   infoCardAnalito: {fileID: 1492092482}
   infoCardTitulante: {fileID: 2111651857}
   infoCardIndicador: {fileID: 1113837231}
+  mililitrosUsados: {fileID: 1528968425}
+  ecuacion: {fileID: 2018800110}
+  resultado: {fileID: 1698874108}
   liquidoMatraz: {fileID: 1074680123}
 --- !u!1001 &1846632976
 PrefabInstance:
@@ -9437,6 +9448,9 @@ MonoBehaviour:
   infoCardAnalito: {fileID: 1492092482}
   infoCardTitulante: {fileID: 2111651857}
   infoCardIndicador: {fileID: 1113837231}
+  mililitrosUsados: {fileID: 1528968425}
+  ecuacion: {fileID: 2018800110}
+  resultado: {fileID: 1698874108}
   liquidoMatraz: {fileID: 1074680123}
 --- !u!1001 &1967684661
 PrefabInstance:
@@ -10136,7 +10150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Concentraci\xF3n Real: 0.1 N"
+  m_text: 'Concentracion Real: 0.1 N'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
   m_sharedMaterial: {fileID: 7032093815205813286, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
@@ -11016,6 +11030,17 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 2088956310}
   _maxGrabPoints: -1
+--- !u!114 &2145763382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8560839017174208340, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
+  m_PrefabInstance: {fileID: 587429708}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

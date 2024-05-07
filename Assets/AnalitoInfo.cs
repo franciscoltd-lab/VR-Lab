@@ -10,7 +10,7 @@ namespace Assets
     internal class AnalitoInfo
     {
         public int concentracion_analito { get; set; }
-        public double concentracion_titulante { get; set; }
+        public float concentracion_titulante { get; set; }
         public string estructura_analito { get; set; }
         public string estructura_titulante { get; set; }
         public string nombre_analito { get; set; }

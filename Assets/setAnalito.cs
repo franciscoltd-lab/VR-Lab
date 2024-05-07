@@ -3,6 +3,7 @@ using Meta.WitAi.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using TMPro;
 using UnityEngine;
@@ -14,16 +15,20 @@ public class setAnalito : MonoBehaviour
     public Canvas infoCardAnalito;
     public Canvas infoCardTitulante;
     public Canvas infoCardIndicador;
+    public TextMeshProUGUI mililitrosUsados;
+    public TextMeshProUGUI ecuacion;
+    public TextMeshProUGUI resultado;
     private TextMeshProUGUI[] infoTextAnalito;
     private TextMeshProUGUI[] infoTextTitulante;
     private TextMeshProUGUI[] infoTextIndicador;
+
     private Toggle change;
 
     public Liquid liquidoMatraz;
     private Renderer renderer;
     private Material material;
 
-    private string url = "http://192.168.162.200:5000/analito/";
+    private string url = "https://vmn2xzct-5000.usw3.devtunnels.ms/analito/";
 
 
     private void Start()
@@ -33,6 +38,7 @@ public class setAnalito : MonoBehaviour
     }
     public async void getAnalito()
     {
+
         //int id = int.Parse(this.GetComponent<GameObject>().tag);
         change = GetComponent<Toggle>();
         string[] tag = change.tag.Split("/");
@@ -41,6 +47,8 @@ public class setAnalito : MonoBehaviour
 
         if (change.isOn)
         {
+            //System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls | System.Net.SecurityProtocolType.Tls11 | System.Net.SecurityProtocolType.Tls12;
+
 
             using (HttpClient client = new HttpClient())
             {
@@ -52,6 +60,11 @@ public class setAnalito : MonoBehaviour
                     // Verifica si la solicitud fue exitosa (c�digo de estado 200)
                     if (response.IsSuccessStatusCode)
                     {
+                        //Resetear valores
+                        mililitrosUsados.text = "0";
+                        ecuacion.text = "";
+                        resultado.text = "";
+
                         // Lee el contenido de la respuesta en formato JSON
                         string responseBody = await response.Content.ReadAsStringAsync();
                         AnalitoInfo analitoInfo = JsonConvert.DeserializeObject<AnalitoInfo>(responseBody);
@@ -59,12 +72,13 @@ public class setAnalito : MonoBehaviour
                         //Llenar la informaci�n con el analito seleccionado
                         infoTextAnalito = infoCardAnalito.GetComponentsInChildren<TextMeshProUGUI>();
                         infoTextAnalito[1].text = analitoInfo.nombre_analito;
+                        infoTextAnalito[2].text = "Desconocida";
                         infoTextAnalito[4].text = "Estructura: " + analitoInfo.estructura_analito;
 
                         //Llenar la informaci�n con el analito seleccionado
                         infoTextTitulante = infoCardTitulante.GetComponentsInChildren<TextMeshProUGUI>();
                         infoTextTitulante[1].text = analitoInfo.nombre_titulante;
-                        infoTextTitulante[2].text = "Concentraci�n Real: " + analitoInfo.concentracion_titulante.ToString() + " N";
+                        infoTextTitulante[2].text = analitoInfo.concentracion_titulante.ToString("#0.##");
                         infoTextTitulante[3].text = "Estructura: " + analitoInfo.estructura_titulante;
 
                         //LLenar la información del indicador utilizado
